@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jony Reis - Desenvolvedor Web em Florianópolis</title>
     <meta name="description" content="Blog Jony Reis - Desenvolvedor Front-End | Escrevo sobre a minha experiência e dicas com desenvolvimento web.">
@@ -16,32 +16,33 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-3 pr-5">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Abrir Navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#" onclick="go('#sobre')">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#" onclick="go('#portfolio')">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-success ml-md-3" href="https://bit.ly/2SqeX0Y" target="_blank">
-                            <i class="fab fa-whatsapp"></i> 
-                            WhatsApp
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-3">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Abrir Navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" onclick="go('#sobre')">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" onclick="go('#portfolio')">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-success ml-md-3" href="https://bit.ly/2SqeX0Y" target="_blank">
+                        <i class="fab fa-whatsapp"></i> 
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
     <main class="container" id="main">
         <div class="row">
             <h1 class="display-1">
@@ -53,7 +54,7 @@
     <section class="container" id="sobre">
         <div class="row">
             <div class="col-5">
-                <img id="foto-jony" src="/assets//eu/jony-intro.png" alt="Foto do Jony" srcset="">
+                <img class="img-fluid rounded-circle" src="/assets//eu/jony-intro.png" alt="Foto do Jony" srcset="">
             </div>
             <div class="col-lg-7">
                 <h2 class="display-5">Sou natural de Cuiabá, mas resido em Florianópolis.</h2>
@@ -68,27 +69,43 @@
             </div>
         </div>
     </section>
-    <section class="containe" id="portfolio">
-        <div class="row box-shadow">
-            <div class="col-6 py-5">
-                <img src="/assets/foodfy.png" alt="" srcset="">
+    <section class="container" id="portfolio">
+        <div class="row my-5 shadow-lg rounded">
+            <div class="col-6 bg">
+                <a href="https://jonyreis.github.io/bootcamp-launchBase-desafio02/" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/foodfy.png" class="img-fluid m-3" alt="" srcset="">
+                </a>
             </div>
 
             <div class="col-6 bg-light">
-                <h3>Foodfy</h3>
-                <p>O projeto foodfy foi desenvolvido durante o Bootcamp LaunchBase Rocketseat</p>
-                <ul class="d-flex justify-content-around">
-                    <li class="bg-warning">HTML</li>
-                    <li class="bg-primary">CSS</li>
-                    <li class="bg-success">JavaScript</li>
-                </ul>
-                <a href="http://" target="_blank" rel="noopener noreferrer">Visualizar o Projeto</a>
+                <h3 class="display-4 my-3">Foodfy</h3>
+                <p class="lead">O projeto Foodfy foi desenvolvido durante o Bootcamp LaunchBase da Rocketseat.</p>
+                <p class="lead">Tecnologias Usadas:</p>
+                <span class="badge badge-danger p-2">HTML</span>
+                <span class="badge badge-primary p-2">CSS</span>
+                <span class="badge badge-warning p-2">JavaScript</span>
+                <br>
+                <a class="mt-5 btn btn-link" href="https://github.com/jonyreis/bootcamp-launchBase-desafio02" target="_blank" rel="noopener noreferrer">Visualizar projeto no GitHub</a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark py-4 text-white text-center">
-        &copy; Desenvolvido por <a href="http://">Jony Reis</a>  2020
+    <footer class="mt-5 text-white text-center">
+        <ul class="m-0 py-3 list-unstyled d-flex justify-content-md-around bg-dark">
+            <li class="d-flex">
+                <img src="assets/redes-sociais/linkedin-branco.svg" alt="Ícone do LinkedIn">
+                <p class="ml-3 mt-4">Veja o meu perfil no <a class="link" href="https://www.linkedin.com/in/jonyreis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            </li>
+            <li class="d-flex">
+                <img src="assets/redes-sociais/github-branco.svg" alt="Ícone do GitHub">
+                <p class="ml-3 mt-4">Veja meus repositórios no <a class="link" href="http://www.github.com/jonyreis" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </li>
+            <li class="d-flex">
+                <img src="assets/redes-sociais/email-branco.svg" alt="Ícone do E-mail">
+                <p class="ml-3 mt-4"><span>email:</span> jonyreiscardoso@gmail.com</p>
+            </li>
+        </ul>
+        <p class="m-0 py-2 bg">&copy; Desenvolvido por Jony Reis</p>
     </footer>
     
     <script src="/js/scroll.js"></script>
