@@ -61,20 +61,45 @@ h2 {
 /* ==== PORTFÓLIO ==== */
 
 #portfolio {
-    padding-top: 80px;
+    padding-top: 20px;
+}
+
+#portfolio > div {
+    margin: 120px 0;
 }
 
 #portfolio img {
     border-radius: 10px;
-    max-width: 500px;
 }
 
 #portfolio ul li {
     list-style: none;
 }
 
-#portfolio .bg {
-    background: linear-gradient(90deg, rgba(251,223,219,1) 0%, rgba(253,240,238,1) 99%);
+#portfolio .bg-foodfy {
+    background: rgb(237,190,213);
+    background: -moz-linear-gradient(164deg, rgba(237,190,213,1) 0%, rgba(252,229,227,1) 100%);
+    background: -webkit-linear-gradient(164deg, rgba(237,190,213,1) 0%, rgba(252,229,227,1) 100%);
+    background: linear-gradient(164deg, rgba(237,190,213,1) 0%, rgba(252,229,227,1) 100%);
+}
+
+#portfolio .bg-finddev {
+    background: rgb(17,17,17);
+    background: -moz-linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(217,217,217,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(217,217,217,1) 100%);
+    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(217,217,217,1) 100%);
+}
+
+#portfolio .bg-marisa {
+    background: -moz-linear-gradient(90deg, rgba(255,0,153,1) 0%, rgba(255,214,239,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,0,153,1) 0%, rgba(255,214,239,1) 100%);
+    background: linear-gradient(90deg, rgba(255,0,153,1) 0%, rgba(255,214,239,1) 100%);
+}
+
+#portfolio .bg-calculadora {
+    background: -moz-linear-gradient(164deg, rgba(16,80,150,1) 0%, rgba(217,123,64,1) 100%);
+    background: -webkit-linear-gradient(164deg, rgba(16,80,150,1) 0%, rgba(217,123,64,1) 100%);
+    background: linear-gradient(164deg, rgba(16,80,150,1) 0%, rgba(217,123,64,1) 100%);
 }
 
 /* === FOOTER === */
