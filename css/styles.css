@@ -1,150 +1,192 @@
 /* ==== ESTILOS GERAIS ==== */
 
 body {
-    padding-top: 72px;
+  padding-top: 72px;
 }
 
 /* ==== NAV ==== */
 
 .nav-link:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* ==== MAIN ==== */
 
 main {
-    min-height: 90vh;
+  min-height: 90vh;
 }
 
 main h1 {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
 main h1::after {
-    content: '|';
-    margin-left: 4px;
-    opacity: 1;
-    animation: cursor 700ms infinite;
+  content: "|";
+  margin-left: 4px;
+  opacity: 1;
+  animation: cursor 700ms infinite;
 }
 
 @keyframes cursor {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* ==== SOBRE ==== */
 
 #sobre {
-    padding-top: 100px;
-    min-height: 100vh;
+  padding-top: 100px;
+  min-height: 100vh;
 }
 
 h2 {
-    color: #000;
-    font-weight: bold;
+  color: #000;
+  font-weight: bold;
 }
 
 .link {
-    color: #212529;
-    font-weight: bold;
+  color: #212529;
+  font-weight: bold;
 }
 
 .link:hover {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 /* ==== PORTFÓLIO ==== */
 
 #portfolio {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #portfolio > div {
-    margin: 120px 0;
+  margin: 120px 0;
 }
 
 #portfolio img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 #portfolio ul li {
-    list-style: none;
+  list-style: none;
 }
 
-#portfolio .bg-foodfy {
-    background: rgb(237,190,213);
-    background: -moz-linear-gradient(164deg, rgba(237,190,213,1) 0%, rgba(252,229,227,1) 100%);
-    background: -webkit-linear-gradient(164deg, rgba(237,190,213,1) 0%, rgba(252,229,227,1) 100%);
-    background: linear-gradient(164deg, rgba(237,190,213,1) 0%, rgba(252,229,227,1) 100%);
+.bg-foodfy {
+  background: rgb(237, 190, 213);
+  background: -moz-linear-gradient(
+    164deg,
+    rgba(237, 190, 213, 1) 0%,
+    rgba(252, 229, 227, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    164deg,
+    rgba(237, 190, 213, 1) 0%,
+    rgba(252, 229, 227, 1) 100%
+  );
+  background: linear-gradient(
+    164deg,
+    rgba(237, 190, 213, 1) 0%,
+    rgba(252, 229, 227, 1) 100%
+  );
 }
 
-#portfolio .bg-finddev {
-    background: rgb(17,17,17);
-    background: -moz-linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(217,217,217,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(217,217,217,1) 100%);
-    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(217,217,217,1) 100%);
+.bg-finddev {
+  background: rgb(17, 17, 17);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(217, 217, 217, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(217, 217, 217, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(217, 217, 217, 1) 100%
+  );
 }
 
-#portfolio .bg-marisa {
-    background: -moz-linear-gradient(90deg, rgba(255,0,153,1) 0%, rgba(255,214,239,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(255,0,153,1) 0%, rgba(255,214,239,1) 100%);
-    background: linear-gradient(90deg, rgba(255,0,153,1) 0%, rgba(255,214,239,1) 100%);
+.bg-marisa {
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 0, 153, 1) 0%,
+    rgba(255, 214, 239, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 0, 153, 1) 0%,
+    rgba(255, 214, 239, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 153, 1) 0%,
+    rgba(255, 214, 239, 1) 100%
+  );
 }
 
-#portfolio .bg-calculadora {
-    background: -moz-linear-gradient(164deg, rgba(16,80,150,1) 0%, rgba(217,123,64,1) 100%);
-    background: -webkit-linear-gradient(164deg, rgba(16,80,150,1) 0%, rgba(217,123,64,1) 100%);
-    background: linear-gradient(164deg, rgba(16,80,150,1) 0%, rgba(217,123,64,1) 100%);
+.bg-wildbeast {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  background: -moz-linear-gradient(135deg, #8844ee, #b07dfb);
+  background: -webkit-linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.bg-surfbot {
+  background: linear-gradient(135deg, #0467cc, #1188ee);
+  background: -moz-linear-gradient(135deg, #0467cc, #1188ee);
+  background: -webkit-linear-gradient(135deg, #0467cc, #1188ee);
 }
 
 /* === LINK SCROLL TOP === */
 
 #back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
-  
 
 /* === FOOTER === */
 
 footer .bg {
-    background-color: #111;
+  background-color: #111;
 }
 
 footer .link {
-    color: #fff;
-    font-weight: normal;
-    text-decoration: underline;
+  color: #fff;
+  font-weight: normal;
+  text-decoration: underline;
 }
 
 footer .link:hover {
-    color: #000;
-    text-decoration: underline;
+  color: #000;
+  text-decoration: underline;
 }
 /* ==== MEDIA QUERIES ==== */
 
 @media (max-width: 991px) {
-    main .display-1 {
-        font-size: 74px;
-    }
+  main .display-1 {
+    font-size: 74px;
+  }
 }
 
 @media (max-width: 767px) {
-    main .display-1 {
-        font-size: 56px;
-    }
+  main .display-1 {
+    font-size: 56px;
+  }
 }
 
 @media (max-width: 575px) {
-    main .display-1 {
-        font-size: 46px;
-        padding-left: 15px;
-    }
+  main .display-1 {
+    font-size: 46px;
+    padding-left: 15px;
+  }
 }
